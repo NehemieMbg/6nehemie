@@ -60,4 +60,18 @@ body {
     transform: translateX(-10px);
     transition: all 0.5s ease;
   }
+
+  .slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .slide {
+    flex: 0 0 auto;
+    width: 33%;
+    scroll-snap-align: center;
+  }
 }
