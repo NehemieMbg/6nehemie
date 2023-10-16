@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     <section className="px-10 ">
       <div className="flex items-center justify-center rounded-xl font-montserrat bg-[#F2E5DE] bg-white bg-bottom bg-cover">
-        <div className="w-full flex flex-col items-center py-14">
-          <h1 className="text-4xl font-medium mb-4 tracking-tighter">
+        <div className="w-full flex flex-col items-center py-24">
+          <h1 className="text-6xl uppercase font-medium mb-4 tracking-tighter">
             Nehemie Mombanga
           </h1>
           {/* <p className=" font-medium">Full-Stack Developer</p> */}
