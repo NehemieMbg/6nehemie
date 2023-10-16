@@ -28,11 +28,59 @@ export const skills = {
   },
   libraries: {
     label: 'Libraries & Frameworks',
-    skills:
-      'React.js, Next.js, Redux Toolkit, SCSS, Tailwind, React-router-dom, MangoDB, Mangoose, Prisma, Hardhat, Ether.js, Express.',
+    skills1: ['React.js', 'Next.js', 'Express', 'Prisma'],
+    skills2: ['React-router-dom', 'Redux Toolkit', 'MangoDB', 'Tailwind'],
+    skills3: ['SCSS', 'Ether.js'],
   },
   tools: {
     label: 'Tools & Platforms',
-    skills: 'Git, Figma, Vercel, Ubuntu, Postman, Visual Studio Code.',
+    skills1: ['Git', 'Figma', 'Vercel', 'Ubuntu'],
+    skills2: ['Postman', 'VS Code'],
   },
 };
+
+export const recentProjects = [
+  {
+    label: 'Open Sense*',
+    images: [
+      '/projects_captures/open-sense.png',
+      '/projects_captures/open-sense_browse.png',
+    ],
+    description:
+      'An online education platform dedicated to fostering skill growth and personal development.',
+    technologies: ['MERN', 'UI Design', 'Tailwind'],
+    link: 'https://www.open-sense.ch',
+  },
+  {
+    label: 'Career Compass',
+    images: [
+      '/projects_captures/career-compass.png',
+      '/projects_captures/career-compass_logged-in.png',
+    ],
+    description: 'Simplifying your job search and application tracking.',
+    technologies: ['MERN', 'UI Design', 'Tailwind'],
+    link: 'https://career-compass.ch',
+  },
+  {
+    label: 'Pulse',
+    images: [
+      '/projects_captures/pulse.png',
+      '/projects_captures/pulse-logged-in.png',
+    ],
+    description:
+      'A social platform where users share their style by linking to their fashion finds, adding a fresh twist to the world of social media',
+    technologies: ['Next.js', 'Prisma', 'Pusher', 'aws S3', 'SCSS', 'Resend'],
+    link: 'https://pulse-app.vercel.app',
+  },
+  {
+    label: 'Text Guard',
+    images: [
+      '/projects_captures/textguard.png',
+      '/projects_captures/textguard-quick-start.png',
+    ],
+    description:
+      'An NPM package designed for robust string data validation, enhancing application security.',
+    technologies: ['Next.js', 'NPM', 'GITHUB ACTIONS', 'Vitest', 'Tailwind'],
+    link: 'https://text-guard.vercel.app',
+  },
+];

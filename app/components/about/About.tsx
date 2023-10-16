@@ -1,5 +1,9 @@
 import { aboutMe, skills } from '@/app/constants';
-import { BookOpenIcon } from '@heroicons/react/24/outline';
+import {
+  BookOpenIcon,
+  WrenchIcon,
+  WrenchScrewdriverIcon,
+} from '@heroicons/react/24/outline';
 
 const About = () => {
   return (
@@ -24,47 +28,100 @@ const About = () => {
 
           {/* SKILLS */}
           <div className="flex flex-col items-end font-montserrat">
-            <h2 className="font-montserrat text-xl uppercase text-neutral-500  mb-10">
-              Skills
-            </h2>
-
-            <div className="flex flex-col items-end gap-16 max-w-[600px]">
+            <div>
               <div>
-                <h3 className="mb-6 text-right">
-                  <span className="mr-3 text-red-400">{'</>'}</span>
-                  Programming languages
-                </h3>
-
-                <ul>
-                  <li className="flex gap-12">
-                    <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
-                      {skills.languages.skills.map((skill, index) => (
-                        <li key={index} className="">
-                          <span className="mr-4">-</span> {skill}
-                        </li>
-                      ))}
-                    </ul>
-                    <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
-                      {skills.languages.others.map((skill, index) => (
-                        <li key={index} className="">
-                          <span className="mr-4">-</span> {skill}
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                </ul>
+                <h2 className="font-montserrat text-left text-xl uppercase text-neutral-500  mb-8">
+                  Skills
+                </h2>
               </div>
-              <div className=" flex flex-col items-end">
-                <h3 className="mb-2 flex">
-                  <span className="mr-3 text-red-400">
-                    <BookOpenIcon className="h-6" />{' '}
-                  </span>
-                  <span>{skills.libraries.label}</span>
-                </h3>
 
-                <p className="text-neutral-400 text-right">
-                  {skills.libraries.skills.split(',').join(' - ')}
-                </p>
+              {/* PROGRAMMING LANGUAGES */}
+              <div className="flex  gap-20 ">
+                <div>
+                  <h3 className="mb-6 text-right">
+                    <span className="mr-3 text-red-400">{'</>'}</span>
+                    Programming languages
+                  </h3>
+
+                  <ul>
+                    <li className="flex gap-10">
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.languages.skills.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.languages.others.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* LIBRARIES & FRAMEWORK */}
+                <div className=" flex flex-col">
+                  <h3 className="mb-6 flex text-end">
+                    <span className="mr-3 text-red-400">
+                      <BookOpenIcon className="h-6" />{' '}
+                    </span>
+                    <span>{skills.libraries.label}</span>
+                  </h3>
+
+                  <ul>
+                    <li className="flex gap-10">
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.libraries.skills1.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.libraries.skills2.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div className=" flex flex-col">
+                  <h3 className="mb-6 flex text-end">
+                    <span className="mr-3 text-red-400">
+                      <WrenchScrewdriverIcon
+                        strokeWidth={1.6}
+                        className="h-5"
+                      />{' '}
+                    </span>
+                    <span>{skills.tools.label}</span>
+                  </h3>
+
+                  {/* TOOLS & PLATFORMS */}
+                  <ul>
+                    <li className="flex gap-10">
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.tools.skills1.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                      <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                        {skills.tools.skills2.map((skill, index) => (
+                          <li key={index} className="">
+                            <span className="mr-2">-</span> {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
