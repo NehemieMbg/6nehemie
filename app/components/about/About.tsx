@@ -28,16 +28,31 @@ const About = () => {
               Skills
             </h2>
 
-            <div className="flex flex-col items-end gap-14 max-w-[600px]">
+            <div className="flex flex-col items-end gap-16 max-w-[600px]">
               <div>
-                <h3 className="mb-2 text-right">
-                  <span className="mr-3 text-red-400">{'</>'}</span>Programming
-                  languages
+                <h3 className="mb-6 text-right">
+                  <span className="mr-3 text-red-400">{'</>'}</span>
+                  Programming languages
                 </h3>
 
-                <p className="text-neutral-400 ">
-                  {skills.languages.skills.split(',').join(' - ')}
-                </p>
+                <ul>
+                  <li className="flex gap-12">
+                    <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                      {skills.languages.skills.map((skill, index) => (
+                        <li key={index} className="">
+                          <span className="mr-4">-</span> {skill}
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                      {skills.languages.others.map((skill, index) => (
+                        <li key={index} className="">
+                          <span className="mr-4">-</span> {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                </ul>
               </div>
               <div className=" flex flex-col items-end">
                 <h3 className="mb-2 flex">

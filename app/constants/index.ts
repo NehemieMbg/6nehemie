@@ -23,8 +23,8 @@ export const aboutMe = {
 export const skills = {
   languages: {
     label: 'Programming Languages',
-    skills: 'TypeScript, JavaScript, Solidity, Python, C, MySQL, HTML, CSS',
-    others: ['Python', 'C', 'MySQL', 'HTML', 'CSS'],
+    skills: ['TypeScript', 'JavaScript', 'Solidity', 'Python'],
+    others: ['C', 'MySQL', 'HTML', 'CSS'],
   },
   libraries: {
     label: 'Libraries & Frameworks',
