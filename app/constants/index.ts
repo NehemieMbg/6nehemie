@@ -70,7 +70,7 @@ export const recentProjects = [
     description:
       'A social platform where users share their style by linking to their fashion finds, adding a fresh twist to the world of social media',
     technologies: ['Next.js', 'Prisma', 'Pusher', 'aws S3', 'SCSS', 'Resend'],
-    link: 'https://pulse-app.vercel.app',
+    link: 'https://pulse-app.ch',
   },
   {
     label: 'Text Guard',
@@ -81,6 +81,6 @@ export const recentProjects = [
     description:
       'An NPM package designed for robust string data validation, enhancing application security.',
     technologies: ['Next.js', 'NPM', 'GITHUB ACTIONS', 'Vitest', 'Tailwind'],
-    link: 'https://text-guard.vercel.app',
+    link: 'https://nehemie-textguard.vercel.app/',
   },
 ];
