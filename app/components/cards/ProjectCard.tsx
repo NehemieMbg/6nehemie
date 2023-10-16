@@ -26,7 +26,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
 
-      <h3 className="font-medium text-lg">{label}</h3>
+      <h3 className="font-medium text-lg">
+        {label}{' '}
+        {label === 'Open Sense*' ? (
+          <span className="text-xs">(Currently in development)</span>
+        ) : null}{' '}
+      </h3>
       <p className="text-sm">{description}</p>
       <a
         href={link}
