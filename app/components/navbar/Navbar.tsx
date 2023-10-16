@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import { navigation } from '@/app/constants';
 
 const Navbar = () => {
   return (
@@ -9,9 +9,11 @@ const Navbar = () => {
         <span className="text-red-400"> *</span>
       </h1>
       <div className="flex gap-6 text-sm">
-        <Link href="/">About</Link>
-        <Link href="/">Projects</Link>
-        <Link href="/">Contact</Link>
+        {navigation.links.map((link) => (
+          <Link href={link.href} key={link.label}>
+            {link.label}
+          </Link>
+        ))}
       </div>
     </nav>
   );

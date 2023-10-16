@@ -18,6 +18,8 @@ const config: Config = {
       },
       colors: {
         creme: '#F4F3F1',
+        'light-gray': '#858585',
+        'dark-gray': '#171717',
       },
     },
   },

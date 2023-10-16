@@ -22,3 +22,10 @@ body {
   background-color: #f4f3f1;
   font-family: 'Montserrat', sans-serif;
 }
+
+@layer components {
+  .bg-hero {
+    background-image: url('/gradient-background.png');
+    background-position: top center;
+  }
+}
