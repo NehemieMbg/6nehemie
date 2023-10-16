@@ -17,7 +17,7 @@ const Hero = () => {
             Nehemie Mombanga
           </h1>
           {/* <p className=" font-medium">Full-Stack Developer</p> */}
-          <p className="mb-10 max-w-3xl text-center mt-2">
+          <p className="mb-10 max-w-3xl text-sm text-center mt-2 uppercase">
             <span className="text-red-400">Hey there!</span> I&apos;m not your
             typical <span className="text-red-400 ">full-stack developer</span>.
             My eye for design and my knack for coding converge to create digital
@@ -25,24 +25,24 @@ const Hero = () => {
           </p>
 
           <div className="w-full flex gap-6 justify-center text-creme ">
-            <button className="flex justify-between items-center w-full max-w-[230px] bg-dark-gray  p-4 px-6 rounded-full">
+            <button className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800  p-4 px-6 rounded-full">
               <div className="flex gap-4 items-center">
                 {/* <DocumentIcon
                   className="h-8  p-1.5 bg-neutral-800 rounded-md"
                   strokeWidth={2}
                 /> */}
-                <p className="text-sm">Download Cv</p>
+                <p className="uppercase text-sm">Download Cv</p>
               </div>
               <ArrowDownOnSquareIcon className="h-6" strokeWidth={1.5} />
             </button>
 
-            <button className="flex justify-between items-center w-full max-w-[230px] bg-black p-4 px-6 rounded-full">
+            <button className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800 p-4 px-6 rounded-full">
               <div className="flex gap-4 items-center">
                 {/* <ChatBubbleLeftRightIcon
                   strokeWidth={2}
                   className="h-8 w-8 p-1.5 bg-neutral-800 rounded-md"
                 /> */}
-                <p className="text-sm">Contact Me</p>
+                <p className="uppercase text-sm">Contact Me</p>
               </div>
               <ArrowRightIcon className="h-5" strokeWidth={2} />
             </button>
