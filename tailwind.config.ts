@@ -21,6 +21,10 @@ const config: Config = {
         'light-gray': '#858585',
         'dark-gray': '#171717',
       },
+      screens: {
+        wide: '1440px',
+        tight: '1224px',
+      },
     },
   },
   plugins: [],

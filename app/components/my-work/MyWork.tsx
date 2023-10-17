@@ -19,7 +19,7 @@ const MyWork = () => {
     setProjectCount(2);
   };
   return (
-    <section className="p-10 font-montserrat">
+    <section id="projects" className="p-10 font-montserrat">
       <div>
         <h2 className="text-2xl uppercase mb-2 font-semibold">
           Recent Projects

@@ -1,7 +1,7 @@
 export const navigation = {
   links: [
     {
-      href: '/about',
+      href: 'about-me',
       label: 'About',
     },
     {
@@ -84,3 +84,11 @@ export const recentProjects = [
     link: 'https://nehemie-textguard.vercel.app/',
   },
 ];
+
+export const moreAboutMe = {
+  label: 'More About Me',
+  description:
+    "I'm a lifelong learner, driven to grow and embrace challenges. With a background in graphic design and a passion for kickboxing, I embody discipline, determination, and a thirst for new experiences. Currently, I'm at the end of my last year at Holberton School, where I'm further honing my skills in software engineering.",
+  whatIDo:
+    "I'm dedicated to crafting robust and efficient solutions that prioritize user satisfaction. My journey is one of continuous evolution, with a relentless pursuit of pushing the boundaries in the world of development. My work seamlessly merges technical excellence with design aesthetics, transforming concepts into captivating online realities. I'm also passionately exploring the dynamic field of AI, expanding my horizons in the ever-evolving tech landscape.",
+};
