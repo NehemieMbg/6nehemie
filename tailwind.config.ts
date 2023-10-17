@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
       },
       colors: {
         creme: '#F4F3F1',

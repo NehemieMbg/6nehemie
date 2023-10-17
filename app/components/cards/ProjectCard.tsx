@@ -6,6 +6,7 @@ type ProjectCardProps = {
   label: string;
   description: string;
   link: string;
+  className?: string;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -13,9 +14,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   label,
   description,
   link,
+  className,
 }) => {
   return (
-    <div className="bg-white shadow-md p-2 rounded-2xl flex flex-col gap-2">
+    <div
+      className={`bg-white shadow-md p-2 rounded-2xl flex flex-col gap-2 ${
+        className ? className : 'bg-white'
+      }`}
+    >
       <div className="overflow-hidden rounded-xl">
         <Image
           src={images[0]}
@@ -32,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span className="text-xs">(Currently in development)</span>
         ) : null}{' '}
       </h3>
-      <p className="text-sm">{description}</p>
+      <p className="text-sm mb-2">{description}</p>
       <a
         href={link}
         target="_blank"

@@ -2,8 +2,13 @@
 
 import { recentProjects } from '../../constants';
 import { ProjectCard } from '..';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import {
+  ArrowLongRightIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from '@heroicons/react/24/outline';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const MyWork = () => {
   const [showMore, setShowMore] = useState(false);
@@ -26,7 +31,14 @@ const MyWork = () => {
         </h2>
         <div className="flex items-start justify-between">
           <p className="mb-10">Showcasing some of my latest work.</p>
-          {!showMore ? (
+
+          <Link
+            href={'/projects'}
+            className="text-center font-medium flex items-center gap-2 hover:gap-4 transition-all duration-200"
+          >
+            <span>View More</span> <ArrowLongRightIcon className="h-4" />
+          </Link>
+          {/* {!showMore ? (
             <button
               onClick={handleShowMore}
               className="text-center flex items-center gap-2"
@@ -40,7 +52,7 @@ const MyWork = () => {
             >
               <span>See less</span> <ChevronUpIcon className="h-4" />
             </button>
-          )}
+          )} */}
         </div>
       </div>
 

@@ -5,7 +5,10 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-dark-gray h-full text-creme font-montserrat p-10">
+    <footer
+      id="contact-me"
+      className="bg-dark-gray h-full text-creme font-montserrat p-10"
+    >
       <div className="h-full min-h-[85vh] flex flex-col items-center justify-between">
         <div></div>
 
@@ -30,6 +33,14 @@ const Footer = () => {
               className="flex items-center gap-2"
             >
               <span>LinkedIn</span>
+              <ArrowUpRightIcon className="h-4" />
+            </a>
+            <a
+              href="https://github.com/NehemieMbg"
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <span>Github</span>
               <ArrowUpRightIcon className="h-4" />
             </a>
             <a

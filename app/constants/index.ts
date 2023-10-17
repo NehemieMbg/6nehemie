@@ -1,15 +1,15 @@
 export const navigation = {
   links: [
     {
-      href: 'about-me',
+      href: '/about-me',
       label: 'About',
     },
     {
-      href: '#projects',
+      href: '/projects',
       label: 'Projects',
     },
     {
-      href: '/contact',
+      href: '#contact-me',
       label: 'Contact',
     },
   ],

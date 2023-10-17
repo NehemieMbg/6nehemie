@@ -8,7 +8,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const handleBgColor = (href: string) => {
-    if (pathname === '/about-me') return 'bg-dark-gray text-creme';
+    if (pathname === '/about-me' || pathname === '/projects')
+      return 'bg-dark-gray text-creme';
     return 'bg-creme';
   };
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
         <span className="font-semibold">NEHEMIE</span>MOMBANGA
         <span className="text-red-400"> *</span>
       </Link>
-      <div className="flex gap-6 text-sm">
+      <div className="flex gap-6 text-sm font-normal">
         {navigation.links.map((link) => (
           <Link href={link.href} key={link.label}>
             {link.label}

@@ -13,7 +13,7 @@ const About = () => {
         <div className="flex flex-col gap-32 max-w-[1440px] mx-auto">
           {/* ABOUT TEXT */}
           <div>
-            <h2 className="font-montserrat text-xl text-neutral-500 mb-8 uppercase">
+            <h2 className="font-montserrat font-medium text-xl text-neutral-500 mb-8 uppercase">
               About Me
             </h2>
             <p className="text-[28px] font-montserrat max-w-[1100px] font-light mb-10">
@@ -34,7 +34,7 @@ const About = () => {
           <div className="flex flex-col items-end font-montserrat">
             <div>
               <div>
-                <h2 className="font-montserrat text-left text-xl uppercase text-neutral-500  mb-8">
+                <h2 className="font-montserrat font-medium text-left text-xl uppercase text-neutral-500  mb-8">
                   Skills
                 </h2>
               </div>
