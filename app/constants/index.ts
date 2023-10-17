@@ -91,4 +91,36 @@ export const moreAboutMe = {
     "I'm a lifelong learner, driven to grow and embrace challenges. With a background in graphic design and a passion for kickboxing, I embody discipline, determination, and a thirst for new experiences. Currently, I'm at the end of my last year at Holberton School, where I'm further honing my skills in software engineering.",
   whatIDo:
     "I'm dedicated to crafting robust and efficient solutions that prioritize user satisfaction. My journey is one of continuous evolution, with a relentless pursuit of pushing the boundaries in the world of development. My work seamlessly merges technical excellence with design aesthetics, transforming concepts into captivating online realities. I'm also passionately exploring the dynamic field of AI, expanding my horizons in the ever-evolving tech landscape.",
+  whatIDo2:
+    "I'm dedicated to crafting robust and efficient solutions that prioritize user satisfaction. My journey is one of continuous evolution, with a relentless pursuit of pushing the boundaries in the world of development. My work involves merging the technical aspects with design aesthetics, where I transform concepts into captivating online experiences. It's not about being perfect but about learning and evolving every day. I'm also diving headfirst into the dynamic world of AI, continuously expanding my horizons in the ever-changing tech landscape.",
+  whatIDo3:
+    "I'm committed to creating robust, user-centric solutions, prioritizing continuous learning and evolution. My work fuses technical aspects with design aesthetics to craft engaging online experiences. I'm also diving into the dynamic world of AI, continuously expanding my horizons in the ever-changing tech landscape.",
 };
+
+export const experiences = [
+  {
+    label: 'Student Software Developer',
+    company: 'Holberton School',
+    date: '2022 - Pres',
+  },
+  {
+    label: 'Production Operator',
+    company: 'Green Yard Frozen',
+    date: 'Dec 2018 - Aug 2021',
+  },
+  {
+    label: 'Intern Graphic Designer',
+    company: 'Pano',
+    date: 'Jun 2018 - Jul 2018',
+  },
+  {
+    label: 'Intern Graphic Designer',
+    company: 'Made In V',
+    date: 'Jun 2017 - Aug 2017',
+  },
+  {
+    label: 'Intern Graphic Designer',
+    company: '2D Sign',
+    date: 'Jan 2016 - Mar 2016',
+  },
+];
