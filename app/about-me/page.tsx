@@ -16,6 +16,26 @@ const page = () => {
       <WhatIDo />
 
       {/* EXPERIENCES */}
+      <div className="font-montserrat max-w-screen-tight mx-auto mt-64">
+        <div className="flex flex-col w-full items-end">
+          <div className="w-full max-w-[600px]">
+            <h2 className="text-xl uppercase mb-6 text-neutral-100">
+              EXPERIENCE
+            </h2>
+            <ul className="exp ">
+              {experiences.map((experience, index) => (
+                <li key={index}>
+                  <h4 className="text-md font-light">{experience.label}</h4>
+                  <div className="flex justify-between text-neutral-400">
+                    <p className="">{experience.company}</p>
+                    <p>{experience.date}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

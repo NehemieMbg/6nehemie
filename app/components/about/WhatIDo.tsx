@@ -50,12 +50,12 @@ const WhatIDo = () => {
 
           {/* LIBRARIES & FRAMEWORK */}
           <div className=" flex flex-col">
-            <h3 className="mb-6 flex text-end">
+            <h4 className="mb-6 flex text-end">
               <span className="mr-3 text-red-400">
                 <BookOpenIcon className="h-6" />{' '}
               </span>
               <span>{skills.libraries.label}</span>
-            </h3>
+            </h4>
 
             <ul>
               <li className="flex gap-10">
