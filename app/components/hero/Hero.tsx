@@ -9,10 +9,10 @@ import {
 
 const Hero = () => {
   return (
-    <section className="px-10 ">
-      <div className="flex items-center justify-center rounded-xl font-montserrat bg-[#F2E5DE] bg-white bg-bottom bg-cover">
-        <div className="w-full flex flex-col items-center py-24">
-          <h1 className="text-5xl uppercase font-medium mb-4 tracking-tighter">
+    <section className="">
+      <div className="flex items-center justify-center rounded-xl font-montserrat bg-[#F2E5DE] bg-white bg-bottom bg-cover p-side">
+        <div className="w-full flex flex-col items-center py-24 max-lg:py-16 max-md:py-10">
+          <h1 className="text-5xl uppercase font-medium mb-4 tracking-tighter max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
             Nehemie Mombanga
           </h1>
           {/* <p className=" font-medium">Full-Stack Developer</p> */}
@@ -23,7 +23,7 @@ const Hero = () => {
             masterpieces that are as captivating as they are functional.
           </p>
 
-          <div className="w-full flex gap-4 justify-center text-creme ">
+          <div className="w-full flex max-md:flex-col items-center gap-4 justify-center text-creme ">
             <a
               href="/resume/nehemie_resume.pdf"
               download={'nehemie_resume.pdf'}

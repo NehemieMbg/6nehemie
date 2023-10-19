@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <section className="px-10 w-full">
+    <section className=" w-full">
       <div className=" w-full  bg-[#171717] rounded-xl py-14 p-14 text-white">
         <div className="flex flex-col gap-32 max-w-[1440px] mx-auto">
           {/* ABOUT TEXT */}

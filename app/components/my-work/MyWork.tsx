@@ -24,7 +24,7 @@ const MyWork = () => {
     setProjectCount(2);
   };
   return (
-    <section id="projects" className="p-10 font-montserrat">
+    <section id="projects" className="p-10 px-0 font-montserrat">
       <div>
         <h2 className="text-2xl uppercase mb-2 font-semibold">
           Recent Projects
@@ -57,7 +57,7 @@ const MyWork = () => {
       </div>
 
       {/* PROJECT CARD */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-3 gap-4 mb-8 max-[1206px]:grid-cols-2 max-[900px]:grid-cols-1">
         {recentProjects.map((project, index) => {
           if (index > projectCount) return null;
 

@@ -11,7 +11,7 @@ const page = () => {
         <p className="text-center uppercase text-neutral-300 text-sm">
           Check out some of the most recent projects
         </p>
-        <div className="grid grid-cols-3 gap-8 mb-8 text-dark-gray mt-28">
+        <div className="grid grid-cols-3 gap-8 mb-8 text-dark-gray mt-28 max-[1206px]:grid-cols-2 max-[900px]:grid-cols-1">
           {recentProjects.map((project, index) => (
             <ProjectCard
               className="bg-creme"

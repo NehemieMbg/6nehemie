@@ -88,4 +88,8 @@ body {
     padding-bottom: 25px;
     border-bottom: solid 1px rgb(64 64 64);
   }
+
+  .p-side {
+    padding: 0 2.5vw;
+  }
 }

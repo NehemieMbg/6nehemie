@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`flex justify-between items-center py-6 px-10 font-montserrat bg-creme
+      className={`flex justify-between items-center py-6 p-side font-montserrat bg-creme
     ${handleBgColor(pathname)}
     `}
     >
