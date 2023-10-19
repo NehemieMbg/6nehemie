@@ -24,19 +24,26 @@ const Hero = () => {
           </p>
 
           <div className="w-full flex gap-4 justify-center text-creme ">
-            <button className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800  p-4 px-6 rounded-xl">
+            <a
+              href="/resume/nehemie_resume.pdf"
+              download={'nehemie_resume.pdf'}
+              className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800  p-4 px-6 rounded-xl"
+            >
               <div className="flex gap-4 items-center">
                 <p className="uppercase text-sm">Download Cv</p>
               </div>
               <ArrowDownOnSquareIcon className="h-6" strokeWidth={1.5} />
-            </button>
+            </a>
 
-            <button className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800 p-4 px-6 rounded-xl">
+            <a
+              href="#contact-me"
+              className="flex justify-between items-center w-full max-w-[230px] bg-neutral-800 p-4 px-6 rounded-xl"
+            >
               <div className="flex gap-4 items-center">
                 <p className="uppercase text-sm">Contact Me</p>
               </div>
               <ArrowRightIcon className="h-5" strokeWidth={2} />
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <Link href={'.'}>
         <span className="font-semibold">NEHEMIE</span>MOMBANGA
-        <span className="text-red-400"> *</span>
+        {/* <span className="text-red-400"> *</span> */}
       </Link>
       <div className="flex gap-6 text-sm font-normal">
         {navigation.links.map((link) => (
