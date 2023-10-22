@@ -26,33 +26,20 @@ const MyWork = () => {
   return (
     <section id="projects" className="p-10 px-0 font-montserrat">
       <div>
-        <h2 className="text-2xl uppercase mb-2 font-semibold">
+        <h2 className="text-2xl max-lg:text-xl uppercase mb-2 font-semibold">
           Recent Projects
         </h2>
-        <div className="flex items-start justify-between">
-          <p className="mb-10">Showcasing some of my latest work.</p>
+        <div className="flex max-[550px]:flex-col items-start justify-between">
+          <p className="mb-10 max-[550px]:mb-4">
+            Showcasing some of my latest work.
+          </p>
 
           <Link
             href={'/projects'}
-            className="text-center font-medium flex items-center gap-2 hover:gap-4 transition-all duration-200"
+            className="text-center max-[550px]:mb-6 font-medium flex items-center gap-2 hover:gap-4 transition-all duration-200"
           >
             <span>View More</span> <ArrowLongRightIcon className="h-4" />
           </Link>
-          {/* {!showMore ? (
-            <button
-              onClick={handleShowMore}
-              className="text-center flex items-center gap-2"
-            >
-              <span>See more</span> <ChevronDownIcon className="h-4" />
-            </button>
-          ) : (
-            <button
-              onClick={handleShowLess}
-              className="text-center flex items-center gap-2"
-            >
-              <span>See less</span> <ChevronUpIcon className="h-4" />
-            </button>
-          )} */}
         </div>
       </div>
 

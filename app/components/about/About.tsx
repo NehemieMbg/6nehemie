@@ -9,14 +9,14 @@ import Link from 'next/link';
 const About = () => {
   return (
     <section className=" w-full">
-      <div className=" w-full  bg-[#171717] rounded-xl py-14 p-14 text-white">
+      <div className=" w-full  bg-[#171717] rounded-xl py-14 p-14 max-lg:p-10 max-md:p-8 max-sm:p-6 text-white">
         <div className="flex flex-col gap-32 max-w-[1440px] mx-auto">
           {/* ABOUT TEXT */}
           <div>
-            <h2 className="font-montserrat font-medium text-xl text-neutral-500 mb-8 uppercase">
+            <h2 className="font-montserrat font-medium text-xl text-neutral-500 max-lg:text-lg mb-8 max-md:mb-6 uppercase">
               About Me
             </h2>
-            <p className="text-[28px] font-montserrat max-w-[1100px] font-light mb-10">
+            <p className="text-[28px] max-lg:text-2xl max-md:text-xl font-montserrat max-w-[1100px] font-light mb-10">
               {aboutMe.description}
             </p>
 
@@ -34,15 +34,15 @@ const About = () => {
           <div className="flex flex-col items-end font-montserrat">
             <div>
               <div>
-                <h2 className="font-montserrat font-medium text-left text-xl uppercase text-neutral-500  mb-8">
+                <h2 className="font-montserrat font-medium text-left text-xl max-lg:text-lg uppercase text-neutral-500  mb-8">
                   Skills
                 </h2>
               </div>
 
               {/* PROGRAMMING LANGUAGES */}
-              <div className="flex  gap-20 ">
+              <div className="flex max-[1059px]:flex-wrap  gap-20 ">
                 <div>
-                  <h3 className="mb-6 text-right">
+                  <h3 className="mb-6">
                     <span className="mr-3 text-red-400">{'</>'}</span>
                     Programming languages
                   </h3>
@@ -95,6 +95,7 @@ const About = () => {
                     </li>
                   </ul>
                 </div>
+
                 <div className=" flex flex-col">
                   <h3 className="mb-6 flex text-end">
                     <span className="mr-3 text-red-400">

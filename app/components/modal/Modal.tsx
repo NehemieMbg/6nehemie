@@ -6,7 +6,7 @@ const Modal = () => {
   const [showModal, setShowModal] = useState(true);
   return (
     showModal && (
-      <div className="fixed bottom-10 right-10 bg-dark-gray text-white bg-opacity-80 backdrop-blur-xl max-w-lg p-5 rounded-xl overflow-hidden font-montserrat font-medium text-[15px] border-[1px] border-light-gray border-opacity-30">
+      <div className="ml-5 z-50 fixed bottom-10 right-10 bg-dark-gray text-white bg-opacity-80 backdrop-blur-xl max-w-lg p-5 rounded-xl overflow-hidden font-montserrat font-medium text-[15px] border-[1px] border-light-gray border-opacity-30">
         <p className=" mb-5">
           <span className="font-semibold">Please note: </span>This site is
           currently in its developmental phase. For the best viewing experience,

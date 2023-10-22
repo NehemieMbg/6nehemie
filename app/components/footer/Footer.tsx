@@ -13,7 +13,9 @@ const Footer = () => {
         <div></div>
 
         <div className="flex flex-col items-center gap-8">
-          <h1 className="text-6xl font-medium">INTERESTED IN HIRING ME ?</h1>
+          <h1 className="text-6xl font-medium max-md:text-5xl max-sm:text-4xl text-center">
+            INTERESTED IN HIRING ME ?
+          </h1>
           <a
             href="mailto:nehemie.mbg@gmail.com"
             target="_blank"
@@ -25,8 +27,8 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="w-full flex items-end justify-between">
-          <div className="flex gap-6">
+        <div className="w-full flex max-md:flex-col md:items-end md:justify-between">
+          <div className="flex max-sm:flex-wrap gap-6">
             <a
               href="https://www.linkedin.com/in/nehemie-mombanga"
               target="_blank"
@@ -43,7 +45,7 @@ const Footer = () => {
               <span>Github</span>
               <ArrowUpRightIcon className="h-4" />
             </a>
-            <a
+            {/* <a
               href="https://www.behance.net/nehemiemombanga1"
               target="_blank"
               className="flex items-center gap-2"
@@ -58,10 +60,10 @@ const Footer = () => {
             >
               <span>Dribble</span>
               <ArrowUpRightIcon className="h-4" />
-            </a>
+            </a> */}
           </div>
 
-          <p className="text-xs text-end text-light-gray">
+          <p className="text-xs text-start md:text-end max-md:mt-6 text-light-gray">
             Designed and developed by me
             <br />©{year} – All Rights Reserved
           </p>
