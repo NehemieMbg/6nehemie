@@ -8,15 +8,17 @@ const WhatIDo = () => {
   return (
     <div className="flex flex-col gap-8 font-montserrat max-w-screen-tight mx-auto">
       <div className="">
-        <h2 className="text-xl uppercase mb-6 text-neutral-400">WHAT I DO</h2>
+        <h2 className="font-exo font-normal text-lg text-left max-lg:text-lg uppercase  mb-4">
+          WHAT I DO
+        </h2>
         <p className="mb-6 text-3xl max-w-5xl font-light leading-10">
           {moreAboutMe.whatIDo3}
         </p>
       </div>
       <div>
-        <h2 className="font-montserrat text-left text-xl text-neutral-400">
+        <h2 className="font-montserrat text-left text-xl">
           I&apos;m a versatile developer with a strong foundation in back-end
-          technologies. My toolkit includes:
+          technologies.
         </h2>
       </div>
       <div>
@@ -30,14 +32,14 @@ const WhatIDo = () => {
 
             <ul>
               <li className="flex gap-8">
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.languages.skills.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}
                     </li>
                   ))}
                 </ul>
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.languages.others.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}
@@ -59,14 +61,14 @@ const WhatIDo = () => {
 
             <ul>
               <li className="flex gap-10">
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.libraries.skills1.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}
                     </li>
                   ))}
                 </ul>
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.libraries.skills2.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}
@@ -87,14 +89,14 @@ const WhatIDo = () => {
             {/* TOOLS & PLATFORMS */}
             <ul>
               <li className="flex gap-10">
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.tools.skills1.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}
                     </li>
                   ))}
                 </ul>
-                <ul className="flex flex-col gap-2 flex-wrap text-neutral-400 ">
+                <ul className="flex flex-col gap-2 flex-wrap text-neutral-900 ">
                   {skills.tools.skills2.map((skill, index) => (
                     <li key={index} className="">
                       <span className="mr-2">-</span> {skill}

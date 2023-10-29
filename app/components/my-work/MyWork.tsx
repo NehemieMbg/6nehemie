@@ -24,27 +24,19 @@ const MyWork = () => {
     setProjectCount(2);
   };
   return (
-    <section id="projects" className="p-10 px-0 font-montserrat">
+    <section id="projects" className="p-10 px-0 font-exo">
       <div>
-        <h2 className="text-2xl max-lg:text-xl uppercase mb-2 font-semibold">
+        <h2 className="text-xl text-center max-lg:text-xl uppercase mb-2 font-normal">
           Recent Projects
         </h2>
-        <div className="flex max-[550px]:flex-col items-start justify-between">
-          <p className="mb-10 max-[550px]:mb-4">
-            Showcasing some of my latest work.
-          </p>
 
-          <Link
-            href={'/projects'}
-            className="text-center max-[550px]:mb-6 font-medium flex items-center gap-2 hover:gap-4 transition-all duration-200"
-          >
-            <span>View More</span> <ArrowLongRightIcon className="h-4" />
-          </Link>
-        </div>
+        <p className="mb-10 text-center max-[550px]:mb-4">
+          Showcasing some of my latest work.
+        </p>
       </div>
 
       {/* PROJECT CARD */}
-      <div className="grid grid-cols-3 gap-4 mb-8 max-[1206px]:grid-cols-2 max-[900px]:grid-cols-1">
+      <div className="grid grid-cols-3 gap-6 mb-8 max-[1206px]:grid-cols-2 max-[900px]:grid-cols-1">
         {recentProjects.map((project, index) => {
           if (index > projectCount) return null;
 
@@ -58,6 +50,14 @@ const MyWork = () => {
             />
           );
         })}
+      </div>
+      <div className="flex justify-center">
+        <Link
+          href={'/projects'}
+          className="text-center max-[550px]:mb-6 font-medium flex items-center gap-2 hover:gap-4 transition-all duration-200"
+        >
+          <span>View More</span> <ArrowLongRightIcon className="h-4" />
+        </Link>
       </div>
     </section>
   );

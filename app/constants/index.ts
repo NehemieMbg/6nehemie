@@ -1,6 +1,10 @@
 export const navigation = {
   links: [
     {
+      href: '/',
+      label: 'Home',
+    },
+    {
       href: '/about-me',
       label: 'About',
     },

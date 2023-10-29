@@ -17,6 +17,8 @@ const config: Config = {
         montserrat: ['Montserrat', 'sans-serif'],
         oswald: ['Oswald', 'sans-serif'],
         sixcaps: ['"Six Caps"', 'sans-serif'],
+        exo: ['"Exo 2"', 'sans-serif'],
+        khand: ['Khand', 'sans-serif'],
       },
       colors: {
         creme: '#F4F3F1',

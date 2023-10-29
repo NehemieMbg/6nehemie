@@ -5,11 +5,8 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer
-      id="contact-me"
-      className="bg-dark-gray h-full text-creme font-montserrat p-10"
-    >
-      <div className="h-full min-h-[85vh] flex flex-col items-center justify-between">
+    <footer id="contact-me" className=" h-full  font-montserrat p-10">
+      <div className="h-full min-h-screen flex flex-col items-center justify-between">
         <div></div>
 
         <div className="flex flex-col items-center gap-8">
@@ -23,7 +20,9 @@ const Footer = () => {
           >
             <div className="bg-red-400 bg-opacity-90"></div>
 
-            <p className="ml-8  z-10 uppercase text-sm">Send Me An Email</p>
+            <p className="ml-8  z-10 uppercase text-sm text-white">
+              Send Me An Email
+            </p>
           </a>
         </div>
 

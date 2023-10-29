@@ -18,11 +18,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white shadow-md p-2 rounded-2xl flex flex-col gap-2 ${
-        className ? className : 'bg-white'
+      className={` rounded-2xl flex flex-col gap-4 ${
+        className ? className : ''
       }`}
     >
-      <div className="overflow-hidden rounded-xl">
+      <div className="overflow-hidden rounded-3xl">
         <Image
           src={images[0]}
           alt={label}
@@ -32,21 +32,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
 
-      <h3 className="font-medium text-lg">
-        {label}{' '}
-        {label === 'Open Sense*' ? (
-          <span className="text-xs">(Currently in development)</span>
-        ) : null}{' '}
-      </h3>
-      <p className="text-sm mb-2">{description}</p>
-      <a
+      <div className="flex justify-between items-center">
+        <h3 className="font-medium text-lg">
+          {label}{' '}
+          {label === 'Open Sense*' ? (
+            <span className="text-xs">(Currently in development)</span>
+          ) : null}{' '}
+        </h3>
+        <a
+          href={link}
+          target="_blank"
+          className="mt-auto flex gap-2 justify-center items-center font-medium text-center "
+        >
+          <span>Visit live</span>
+          <ArrowUpRightIcon className="h-4" strokeWidth={2} />
+        </a>
+      </div>
+      <p className="text-sm -mt-2">{description}</p>
+      {/* <a
         href={link}
         target="_blank"
         className="mt-auto flex gap-2 justify-center items-center font-medium text-center border-[1px] border-dark-gray border-opacity-20 rounded-lg py-2 px-4 hover:bg-dark-gray hover:text-white transition-all"
       >
         <span>Visit live site</span>
         <ArrowUpRightIcon className="h-4" strokeWidth={2} />
-      </a>
+      </a> */}
     </div>
   );
 };

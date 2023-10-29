@@ -7,3 +7,4 @@ export { default as MyWork } from './my-work/MyWork';
 export { default as ProjectCard } from './cards/ProjectCard';
 export { default as Footer } from './footer/Footer';
 export { default as whatIDo } from './about/WhatIDo';
+export { default as Skills } from './skills/Skills';

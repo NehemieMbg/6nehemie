@@ -1,11 +1,16 @@
 import { About, Hero, MyWork } from './components';
+import Work from './components/work/Work';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 bg-creme p-side ">
+    <main className="p-side ">
       <Hero />
-      <About />
-      <MyWork />
+
+      <div className="flex flex-col gap-[284px]">
+        <About />
+        {/* <Work /> */}
+        <MyWork />
+      </div>
     </main>
   );
 }
